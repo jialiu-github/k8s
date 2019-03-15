@@ -1,0 +1,5 @@
+AC01 创建asp.net core webapi项目，可通过访问url得到一个字符串如：
+curl http://localhost:5000/api/name
+//返回 application name
+AC02 将上述项目用docker打包成镜像，当镜像跑起来之后，还是可以通过url得到这个字符串
+AC03 将上诉镜像部署到k8s中，部署成功后，可以通过url得到这个字符串
