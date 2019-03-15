@@ -1,0 +1,10 @@
+/Users/jialiu/workspace/appForK8S/bin/Debug/netcoreapp2.0/appForK8S.deps.json
+/Users/jialiu/workspace/appForK8S/bin/Debug/netcoreapp2.0/appForK8S.runtimeconfig.json
+/Users/jialiu/workspace/appForK8S/bin/Debug/netcoreapp2.0/appForK8S.runtimeconfig.dev.json
+/Users/jialiu/workspace/appForK8S/bin/Debug/netcoreapp2.0/appForK8S.dll
+/Users/jialiu/workspace/appForK8S/bin/Debug/netcoreapp2.0/appForK8S.pdb
+/Users/jialiu/workspace/appForK8S/obj/Debug/netcoreapp2.0/appForK8S.csproj.CoreCompileInputs.cache
+/Users/jialiu/workspace/appForK8S/obj/Debug/netcoreapp2.0/appForK8S.AssemblyInfoInputs.cache
+/Users/jialiu/workspace/appForK8S/obj/Debug/netcoreapp2.0/appForK8S.AssemblyInfo.cs
+/Users/jialiu/workspace/appForK8S/obj/Debug/netcoreapp2.0/appForK8S.dll
+/Users/jialiu/workspace/appForK8S/obj/Debug/netcoreapp2.0/appForK8S.pdb
