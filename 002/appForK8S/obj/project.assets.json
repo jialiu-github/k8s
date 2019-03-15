@@ -12543,11 +12543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jialiu/workspace/appForK8S/appForK8S.csproj",
+      "projectUniqueName": "/Users/jialiu/workspace/k8s-homework/002/appForK8S/appForK8S.csproj",
       "projectName": "appForK8S",
-      "projectPath": "/Users/jialiu/workspace/appForK8S/appForK8S.csproj",
+      "projectPath": "/Users/jialiu/workspace/k8s-homework/002/appForK8S/appForK8S.csproj",
       "packagesPath": "/Users/jialiu/.nuget/packages/",
-      "outputPath": "/Users/jialiu/workspace/appForK8S/obj/",
+      "outputPath": "/Users/jialiu/workspace/k8s-homework/002/appForK8S/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

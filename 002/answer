@@ -1,0 +1,17 @@
+AC01
+dotnet create new webapi
+dotnet restore
+//change the code and return name by the route "*/name"
+dotnet build
+dotnet run
+
+You can find the project in the folder named appForK8S.
+
+AC02
+You can find the the docker file in appForK8S
+
+docker build -t aspnetapp .
+docker run -d -p 8080:80 --name myapp aspnetapp
+
+reference:
+https://docs.docker.com/engine/examples/dotnetcore/
