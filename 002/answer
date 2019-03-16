@@ -8,10 +8,27 @@ dotnet run
 You can find the project in the folder named appForK8S.
 
 AC02
-You can find the the docker file in appForK8S
+You can find the the docker file in appForK8S.
 
 docker build -t aspnetapp .
 docker run -d -p 8080:80 --name myapp aspnetapp
 
 reference:
 https://docs.docker.com/engine/examples/dotnetcore/
+
+AC03
+
+* yaml
+    You can get the config from aspnetapp.yaml.
+
+    kubectl apply -f azure-vote.yaml
+    kubectl get service
+
+* command
+    kubectl run my-app --image=jialiu5/aspnetapp:latest --port=3000
+    kubectl expose deployment my-app --type=LoadBalancer --port=80 --target-port=80
+
+EXTERNAL-IP/api/name
+
+reference
+https://codeburst.io/getting-started-with-kubernetes-deploy-a-docker-container-with-kubernetes-in-5-minutes-eb4be0e96370
