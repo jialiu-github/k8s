@@ -1,0 +1,43 @@
+
+pod
+service -- loadbalancer, node-port, cluster-ip
+//deployment
+node
+container
+
+yaml is more important
+k8s command
+
+asp.net core default port
+
+??azure export port
+
+
+port
+ACO1
+创建一个asp.net core webapi应用，可以通过12345端口访问
+例：
+http://localhost:12345/name    //should return the name
+
+AC02
+创建一个docker container，mac可以通过23333端口访问
+例：
+http://localhost:23333/name  //should return the name
+注意：登录到docker container内，仍然支持AC01的功能
+
+AC03
+step 1
+在k8s cluster中部署AC02的镜像，是否可以实现以下功能：
+通过命令：
+kubectl port-forward [pod name] 8888:23333
+之后可以实现
+curl http://localhost:8888/name  //return the name
+
+step 2
+如何修改上述命令可以实现
+curl http://localhost:8888/name  //return the name
+
+AC04
+在k8s cluster中部署AC02的镜像，外网可以通过8181端口访问
+例：
+http://[Host_IP]:8181/name  // should return the name

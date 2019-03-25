@@ -16,17 +16,22 @@ docker run -d -p 8080:80 --name myapp aspnetapp
 reference:
 https://docs.docker.com/engine/examples/dotnetcore/
 
+
+?? docker ignore
+
 AC03
 
 * yaml
     You can get the config from aspnetapp.yaml.
 
-    kubectl apply -f azure-vote.yaml
+    kubectl apply -f aspnetapp.yaml
     kubectl get service
 
 * command
-    kubectl run my-app --image=jialiu5/aspnetapp:latest --port=3000
+    kubectl run my-app --image=jialiu5/aspnetapp:latest --port=80
     kubectl expose deployment my-app --type=LoadBalancer --port=80 --target-port=80
+
+?? If change the port to 3000 or 8080, can't work. Why?
 
 EXTERNAL-IP/api/name
 

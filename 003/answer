@@ -1,0 +1,27 @@
+AC01
+add the follow code to appForK8S/Program.cs
+
+        public static IWebHost BuildWebHost(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .UseUrls("http://localhost:12345/")   // key code
+                .Build();
+
+
+AC02
+Do not change the docker file and run the following command:
+
+docker build -t aspnetapp .
+docker run -d -p 23333:12345 --name myapp aspnetapp
+
+note: The application should run at "0.0.0.0"
+
+AC03
+can not do it 
+
+AC04
+You can get the config from port.yaml.
+
+kubectl apply -f port.yaml
+kubectl get service
+

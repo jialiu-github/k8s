@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: port-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: port-app
+  template:
+    metadata:
+      labels:
+        app: port-app
+    spec:
+      containers:
+      - name: port-app
+        image: jialiu5/port:latest 
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
+        ports:
+        - containerPort: 12345
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: port-app
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8181
+  selector:
+    app: port-app
