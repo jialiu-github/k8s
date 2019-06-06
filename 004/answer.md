@@ -1,13 +1,14 @@
 ## part1 pod
 请简述：
 * 什么是node？
-    > node是k8s的工作节点，是k8s集群的物理基础。
+    > node是k8s的工作节点，是k8s集群的物理基础。 //虚拟机？实体机？推荐做法？在node章节中记得回答
 * 什么是pod?
     > pod是k8s的基本构建模块，是最小的部署单元。
 * pod和node是什么关系？
-    > pod运行在node上，一个node可运行若干pod，但是一个pod只可属于某一个node。
+    > pod运行在node上，一个node可运行若干pod，但是一个pod只可属于某一个node。  
+    > （？不同pod属于不同的linux namespace）.
 * pod和docker container是什么关系？
-    > docker container运行在pod中，一个pod可以包含若干docker container。
+    > docker container运行在pod中，一个pod可以包含若干docker container。同一个pod中的container可共享资源。
 
 基于第三次作业请回答以下问题：
 * 当前集群有几个node?
@@ -30,6 +31,7 @@
     > 标签，可以附加到任意k8s资源上的键值对。
 * labels有什么用？
     > 用于组织资源，例如用标签对资源进行分组。
+    > 可根据labels指定pod部署到哪个node上。
 
 请分别通过yaml文件和command，给任意pod加上以下标签：
 hello-label=world
