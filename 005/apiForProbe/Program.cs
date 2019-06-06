@@ -20,7 +20,7 @@ namespace apiForProbe
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:12345/")
+                .UseUrls("http://0.0.0.0:12345/")
                 .Build();
     }
 }
