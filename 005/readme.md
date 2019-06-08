@@ -6,14 +6,15 @@
     HTTP GET / TCP socket / Exec probe
 
 * 创建一个.net core api 项目:
-  * 该项目有个Get Api 路由时 /health， 访问到一定次数，（比如10次）的时候，返回400错误
+  * 该项目有个Get Api 路由时 /probe， 访问到一定次数，（比如10次）的时候，返回400错误
     You can get the .net core project at ./apiForProbe
   * 将该项目发布到docker hub
     You also can get the dockerfile at ./apiForProbe. Please run the following command at this folder to build and push docker image.
     > docker build probe . 
     > docker tag probe [you dockerhub name]/probe
+    > docker push [you dockerhub name]/probe
 
-  * 基于该项目创建一个pod， 并且创建一个Http存活探针，探针指向 /health 接口， 该探针需要在容器启动后等待30秒再工作
+  * 基于该项目创建一个pod， 并且创建一个Http存活探针，探针指向 /probe 接口， 该探针需要在容器启动后等待30秒再工作
     You can get apiForProbe.yaml at current dirctory.
     Please copy apiForProbe.yaml to you k8s work dirctory, and run the following command:
     > kubectl apply -f apiForProbe.yaml
